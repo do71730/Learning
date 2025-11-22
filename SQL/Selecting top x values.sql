@@ -1,7 +1,7 @@
 --Select top 20 rows by customer id
 select top 20 * from bikestores.sales.orders 
 order by customer_id;
-
+ 
 --Select top 20 rows by customer id
 select * from bikestores.sales.orders 
 order by customer_id 
