@@ -28,3 +28,7 @@ order by product_name
 select distinct product_name from BikeStores.production.products 
 where product_name like '[^P-S]%' --return all the products not beginning with letters between [P-S]
 order by product_name
+
+select * from master.sales.feedbacks where comment like '%!%%' escape '!'; --Treat ! as an escape character
+select * from master.sales.feedbacks where comment like '%*%%' escape '*'; --Treat * as an escape character
+select * from master.sales.feedbacks where comment like '%X%%' escape 'X'; --Treat X as an escape character
