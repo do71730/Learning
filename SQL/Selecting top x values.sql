@@ -31,3 +31,16 @@ group by  a.product_id,p.product_name
 order by 3 desc
 offset 0 row
 fetch first 10 row only
+
+
+--Find trailing values
+select distinct  top 4 with ties  a.product_id,p.product_name,count(order_id) as num_order_with_products from bikestores.sales.order_items a
+inner join bikestores.production.products p on a.product_id = p.product_id
+group by  a.product_id,p.product_name
+order by 3 desc;
+
+--find the top 10%
+select distinct  top 10 percent  a.product_id,p.product_name,count(order_id) as num_order_with_products from bikestores.sales.order_items a
+inner join bikestores.production.products p on a.product_id = p.product_id
+group by  a.product_id,p.product_name
+order by 3 desc;
