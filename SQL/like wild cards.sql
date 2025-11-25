@@ -32,3 +32,16 @@ order by product_name
 select * from master.sales.feedbacks where comment like '%!%%' escape '!'; --Treat ! as an escape character
 select * from master.sales.feedbacks where comment like '%*%%' escape '*'; --Treat * as an escape character
 select * from master.sales.feedbacks where comment like '%X%%' escape 'X'; --Treat X as an escape character
+
+--https://www.sqlservertutorial.net/sql-server-basics/sql-server-joins/ next
+
+select * from BikeStores.production.products 
+where brand_id in (9,8,7,6)
+
+select * from BikeStores.production.products a
+where  exists (select brand_id from BikeStores.production.products --returns true, if any value returns(even null) in the subquery, else false
+where brand_id in (10))
+
+select * from BikeStores.production.products a
+where  brand_id in(select brand_id from BikeStores.production.products 
+where brand_id in (9,8,7,6))
