@@ -45,3 +45,7 @@ where brand_id in (10))
 select * from BikeStores.production.products a
 where  brand_id in(select brand_id from BikeStores.production.products 
 where brand_id in (9,8,7,6))
+
+--any
+--all
+-- cross appy
