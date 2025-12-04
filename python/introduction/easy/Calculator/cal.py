@@ -1,3 +1,4 @@
+'''Takes two numbers and return the sum'''
 def additon(num1,num2):
     result = 0
     try: 
@@ -6,6 +7,7 @@ def additon(num1,num2):
         result = "Error"
     return result
 
+'''Takes two numbers and return the difference'''
 def subtraction(num1,num2):
     result = 0
     try: 
@@ -14,6 +16,7 @@ def subtraction(num1,num2):
         result = "Error"
     return result
 
+'''Takes two numbers and return the quotient'''
 def division(num1,num2):
     result = 0
     try: 
@@ -22,6 +25,7 @@ def division(num1,num2):
         result = "Error"
     return result
 
+'''Takes two numbers and return the product'''
 def multiply(num1,num2):
     result = 0
     try: 
@@ -30,6 +34,7 @@ def multiply(num1,num2):
         result = "Error"
     return result
 
+'''Takes two numbers and return the power'''
 def power(num1,num2):
     result = 0
     try: 
@@ -38,6 +43,7 @@ def power(num1,num2):
         result = "Error"
     return result
 
+'''Takes two numbers and return the reminder'''
 def mod(num1, num2):
     result = 0
     try: 
@@ -46,6 +52,7 @@ def mod(num1, num2):
         result = "Error"
     return result
 
+'''Start the calculator and runs until the user inputs x'''
 def main():
     n= 'o'
     while n != 'x':
@@ -86,5 +93,6 @@ def main():
         else:
             print('Goodbye!')
 
+'''Program begins by calling main'''
 if __name__ == '__main__':
     main()
