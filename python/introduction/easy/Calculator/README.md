@@ -10,7 +10,7 @@ This project is a simple calculator that allows the users to perform Six opperat
 - Division: /
 
 ## Error Handling
-Error Handling is performed using a basic try ... except logic. This allows the program to keep running until the user enters 'X' at any time.
+Error Handling is performed using a basic try ... except logic; this allows the program to keep running until the user enters 'X' at any time.
 
 ## How to run
 ```
