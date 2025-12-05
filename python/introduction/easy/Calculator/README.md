@@ -20,6 +20,6 @@ Error Handling is performed using a basic try ... except logic; this allows the 
 ## Skills learnt:
 - if ... else
 - input
-- str to int casting
+- str to float casting
 - while loop
 - try ... catch
